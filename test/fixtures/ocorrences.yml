@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tipo_ocorrencia: MyString
+  descricao: MyText
+  nome_vitima: MyString
+  endereco: MyText
+  nome_contato: MyString
+  tel_contato: MyString
+
+two:
+  tipo_ocorrencia: MyString
+  descricao: MyText
+  nome_vitima: MyString
+  endereco: MyText
+  nome_contato: MyString
+  tel_contato: MyString

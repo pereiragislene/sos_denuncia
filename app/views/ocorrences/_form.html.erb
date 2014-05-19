@@ -1,0 +1,41 @@
+<%= form_for(@ocorrence) do |f| %>
+  <% if @ocorrence.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ocorrence.errors.count, "error") %> prohibited this ocorrence from being saved:</h2>
+
+      <ul>
+      <% @ocorrence.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tipo_ocorrencia %><br>
+    <%= f.text_field :tipo_ocorrencia %>
+  </div>
+  <div class="field">
+    <%= f.label :descricao %><br>
+    <%= f.text_area :descricao %>
+  </div>
+  <div class="field">
+    <%= f.label :nome_vitima %><br>
+    <%= f.text_field :nome_vitima %>
+  </div>
+  <div class="field">
+    <%= f.label :endereco %><br>
+    <%= f.text_area :endereco %>
+  </div>
+  <div class="field">
+    <%= f.label :nome_contato %><br>
+    <%= f.text_field :nome_contato %>
+  </div>
+  <div class="field">
+    <%= f.label :tel_contato %><br>
+    <%= f.text_field :tel_contato %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
