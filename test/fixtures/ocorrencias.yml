@@ -4,14 +4,20 @@ one:
   tipo_ocorrencia: MyString
   descricao: MyText
   nome_vitima: MyString
-  endereco: MyText
+  logradouro: MyString
+  bairro: MyString
+  cidade: MyString
+  estado: MyString
   nome_contato: MyString
-  tel_contato: MyString
+  telefone_contato: MyString
 
 two:
   tipo_ocorrencia: MyString
   descricao: MyText
   nome_vitima: MyString
-  endereco: MyText
+  logradouro: MyString
+  bairro: MyString
+  cidade: MyString
+  estado: MyString
   nome_contato: MyString
-  tel_contato: MyString
+  telefone_contato: MyString

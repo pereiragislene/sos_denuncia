@@ -1,0 +1,41 @@
+<h1>Listing ocorrencias</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tipo ocorrencia</th>
+      <th>Descricao</th>
+      <th>Nome vitima</th>
+      <th>Logradouro</th>
+      <th>Bairro</th>
+      <th>Cidade</th>
+      <th>Estado</th>
+      <th>Nome contato</th>
+      <th>Telefone contato</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ocorrencias.each do |ocorrencia| %>
+      <tr>
+        <td><%= ocorrencia.tipo_ocorrencia %></td>
+        <td><%= ocorrencia.descricao %></td>
+        <td><%= ocorrencia.nome_vitima %></td>
+        <td><%= ocorrencia.logradouro %></td>
+        <td><%= ocorrencia.bairro %></td>
+        <td><%= ocorrencia.cidade %></td>
+        <td><%= ocorrencia.estado %></td>
+        <td><%= ocorrencia.nome_contato %></td>
+        <td><%= ocorrencia.telefone_contato %></td>
+        <td><%= link_to 'Show', ocorrencia %></td>
+        <td><%= link_to 'Edit', edit_ocorrencia_path(ocorrencia) %></td>
+        <td><%= link_to 'Destroy', ocorrencia, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ocorrencia', new_ocorrencia_path %>

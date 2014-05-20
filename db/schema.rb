@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140519164143) do
+ActiveRecord::Schema.define(version: 20140520210317) do
 
   create_table "ocorrences", force: true do |t|
     t.string   "tipo_ocorrencia"
@@ -20,6 +20,20 @@ ActiveRecord::Schema.define(version: 20140519164143) do
     t.text     "endereco"
     t.string   "nome_contato"
     t.string   "tel_contato"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "ocorrencias", force: true do |t|
+    t.string   "tipo_ocorrencia"
+    t.text     "descricao"
+    t.string   "nome_vitima"
+    t.string   "logradouro"
+    t.string   "bairro"
+    t.string   "cidade"
+    t.string   "estado"
+    t.string   "nome_contato"
+    t.string   "telefone_contato"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

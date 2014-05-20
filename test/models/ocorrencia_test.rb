@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class OcorrenceTest < ActiveSupport::TestCase
+class OcorrenciaTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

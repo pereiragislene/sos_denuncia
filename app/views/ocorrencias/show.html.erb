@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tipo ocorrencia:</strong>
+  <%= @ocorrencia.tipo_ocorrencia %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @ocorrencia.descricao %>
+</p>
+
+<p>
+  <strong>Nome vitima:</strong>
+  <%= @ocorrencia.nome_vitima %>
+</p>
+
+<p>
+  <strong>Logradouro:</strong>
+  <%= @ocorrencia.logradouro %>
+</p>
+
+<p>
+  <strong>Bairro:</strong>
+  <%= @ocorrencia.bairro %>
+</p>
+
+<p>
+  <strong>Cidade:</strong>
+  <%= @ocorrencia.cidade %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @ocorrencia.estado %>
+</p>
+
+<p>
+  <strong>Nome contato:</strong>
+  <%= @ocorrencia.nome_contato %>
+</p>
+
+<p>
+  <strong>Telefone contato:</strong>
+  <%= @ocorrencia.telefone_contato %>
+</p>
+
+<%= link_to 'Edit', edit_ocorrencia_path(@ocorrencia) %> |
+<%= link_to 'Back', ocorrencias_path %>
