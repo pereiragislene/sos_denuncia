@@ -1,49 +1,41 @@
-<p id="notice"><%= notice %></p>
+<div class="page-header">
+  <%= link_to ocorrencias_path, :class => 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_ocorrencia_path(@ocorrencia), :class => 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h3>Exibir Ocorrência</h3>
+</div>
 
-<p>
-  <strong>Tipo ocorrencia:</strong>
-  <%= @ocorrencia.tipo_ocorrencia %>
-</p>
+<dl class="dl-horizontal">
+  <dt>Tipo ocorrencia:</dt>
+  <dd><%= @ocorrencia.tipo_ocorrencia %></dd>
 
-<p>
-  <strong>Descricao:</strong>
-  <%= @ocorrencia.descricao %>
-</p>
+  <dt>Descricao:</dt>
+  <dd><%= @ocorrencia.descricao %></dd>
 
-<p>
-  <strong>Nome vitima:</strong>
-  <%= @ocorrencia.nome_vitima %>
-</p>
+  <dt>Nome vitima:</dt>
+  <dd><%= @ocorrencia.nome_vitima %></dd>
 
-<p>
-  <strong>Logradouro:</strong>
-  <%= @ocorrencia.logradouro %>
-</p>
+  <dt>Logradouro:</dt>
+  <dd><%= @ocorrencia.logradouro %></dd>
 
-<p>
-  <strong>Bairro:</strong>
-  <%= @ocorrencia.bairro %>
-</p>
+  <dt>Bairro:</dt>
+  <dd><%= @ocorrencia.bairro %></dd>
 
-<p>
-  <strong>Cidade:</strong>
-  <%= @ocorrencia.cidade %>
-</p>
+  <dt>Cidade:</dt>
+  <dd><%= @ocorrencia.cidade %></dd>
 
-<p>
-  <strong>Estado:</strong>
-  <%= @ocorrencia.estado %>
-</p>
+  <dt>Estado:</dt>
+  <dd><%= @ocorrencia.estado %></dd>
 
-<p>
-  <strong>Nome contato:</strong>
-  <%= @ocorrencia.nome_contato %>
-</p>
+  <dt>Nome contato:</dt>
+  <dd><%= @ocorrencia.nome_contato %></dd>
 
-<p>
-  <strong>Telefone contato:</strong>
-  <%= @ocorrencia.telefone_contato %>
-</p>
+  <dt>Telefone contato:</dt>
+  <dd><%= @ocorrencia.telefone_contato %></dd>
 
-<%= link_to 'Edit', edit_ocorrencia_path(@ocorrencia) %> |
-<%= link_to 'Back', ocorrencias_path %>
+</dl>

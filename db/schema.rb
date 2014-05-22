@@ -11,18 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140520210317) do
-
-  create_table "ocorrences", force: true do |t|
-    t.string   "tipo_ocorrencia"
-    t.text     "descricao"
-    t.string   "nome_vitima"
-    t.text     "endereco"
-    t.string   "nome_contato"
-    t.string   "tel_contato"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(version: 20140522025726) do
 
   create_table "ocorrencias", force: true do |t|
     t.string   "tipo_ocorrencia"

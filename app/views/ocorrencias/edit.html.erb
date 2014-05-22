@@ -1,6 +1,13 @@
-<h1>Editing ocorrencia</h1>
+<div class="page-header">
+  <%= link_to ocorrencias_path, :class => 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to @ocorrencia, :class => 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-info-sign"></span>
+    Show
+  <% end %>
+  <h3>Editar Ocorrência</h3>
+</div>
 
 <%= render 'form' %>
-
-<%= link_to 'Show', @ocorrencia %> |
-<%= link_to 'Back', ocorrencias_path %>
