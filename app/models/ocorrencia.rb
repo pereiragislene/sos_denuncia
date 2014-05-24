@@ -8,4 +8,6 @@ class Ocorrencia < ActiveRecord::Base
 	validates_presence_of :estado, :message => " - deve ser preenchido"
 	validates_presence_of :nome_contato, :message => " - deve ser preenchido"
 	validates_presence_of :telefone_contato, :message => " - deve ser preenchido"
+	validates_format_of :telefone_contato, :with => /\A[\d]+\z/, :message => " - deve ser um numero", :allow_blank => true
+	validates_length_of :telefone_contato, :is => 10, :message => " - deve ter 10 dígitos", :allow_blank => true
 end

@@ -35,7 +35,7 @@
             <td><%= ocorrencia.cidade %></td>
             <td><%= ocorrencia.estado %></td>
             <td><%= ocorrencia.nome_contato %></td>
-            <td><%= ocorrencia.telefone_contato %></td>
+            <td><%= formata_telefone(ocorrencia.telefone_contato) %></td>
             <td><%= link_to 'Exibir', ocorrencia %></td>
         <td><%= link_to 'Editar', edit_ocorrencia_path(ocorrencia) %></td>
         <td><%= link_to 'Apagar', ocorrencia, method: :delete, data: { confirm: 'Tem certeza de que deseja excluir?' } %></td>

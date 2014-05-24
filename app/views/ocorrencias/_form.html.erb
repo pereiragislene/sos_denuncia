@@ -5,7 +5,6 @@
       <h4>
         <%= pluralize(@ocorrencia.errors.count, "erro") %> 
         <%= "impede".pluralize(@ocorrencia.errors.count) %> esta ocorrência de ser registrada:</h4>
-
       <ul>
       <% @ocorrencia.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
