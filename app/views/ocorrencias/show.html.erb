@@ -1,23 +1,23 @@
 <div class="page-header">
   <%= link_to ocorrencias_path, :class => 'btn btn-default' do %>
     <span class="glyphicon glyphicon-list-alt"></span>
-    Back
+    Voltar
   <% end %>
   <%= link_to edit_ocorrencia_path(@ocorrencia), :class => 'btn btn-primary' do %>
     <span class="glyphicon glyphicon-pencil"></span>
-    Edit
+    Editar
   <% end %>
   <h3>Exibir Ocorrência</h3>
 </div>
 
 <dl class="dl-horizontal">
-  <dt>Tipo ocorrencia:</dt>
+  <dt>Tipo da Ocorrência:</dt>
   <dd><%= @ocorrencia.tipo_ocorrencia %></dd>
 
-  <dt>Descricao:</dt>
+  <dt>Descrição:</dt>
   <dd><%= @ocorrencia.descricao %></dd>
 
-  <dt>Nome vitima:</dt>
+  <dt>Nome da Vítima:</dt>
   <dd><%= @ocorrencia.nome_vitima %></dd>
 
   <dt>Logradouro:</dt>
@@ -32,10 +32,10 @@
   <dt>Estado:</dt>
   <dd><%= @ocorrencia.estado %></dd>
 
-  <dt>Nome contato:</dt>
+  <dt>Nome do Contato:</dt>
   <dd><%= @ocorrencia.nome_contato %></dd>
 
-  <dt>Telefone contato:</dt>
+  <dt>Telefone para Contato:</dt>
   <dd><%= @ocorrencia.telefone_contato %></dd>
 
 </dl>

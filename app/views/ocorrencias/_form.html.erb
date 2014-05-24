@@ -2,7 +2,9 @@
   <% if @ocorrencia.errors.any? %>
     <div class="alert alert-danger alert-dismissable">
       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-      <h4><%= pluralize(@ocorrencia.errors.count, "error") %> prohibited this ocorrencia from being saved:</h4>
+      <h4>
+        <%= pluralize(@ocorrencia.errors.count, "erro") %> 
+        <%= "impede".pluralize(@ocorrencia.errors.count) %> esta ocorrência de ser registrada:</h4>
 
       <ul>
       <% @ocorrencia.errors.full_messages.each do |msg| %>

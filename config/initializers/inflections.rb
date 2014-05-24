@@ -17,4 +17,5 @@
 
 ActiveSupport::Inflector.inflections do |inflect|
   inflect.irregular 'ocorrencia', 'ocorrencias'
+  inflect.irregular 'impede', 'impedem'
 end
