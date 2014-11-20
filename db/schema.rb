@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140522025726) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "ocorrencias", force: true do |t|
     t.string   "tipo_ocorrencia"
     t.text     "descricao"
