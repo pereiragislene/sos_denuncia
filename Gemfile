@@ -46,3 +46,6 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'bootstrap-generators', '~> 3.1.1'
+
+# Adding gem for Heroku
+gem 'rails_12factor', group: :production
