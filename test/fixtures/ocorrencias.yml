@@ -1,23 +1,23 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  tipo_ocorrencia: MyString
-  descricao: MyText
-  nome_vitima: MyString
-  logradouro: MyString
-  bairro: MyString
-  cidade: MyString
-  estado: MyString
-  nome_contato: MyString
-  telefone_contato: MyString
+  tipo_ocorrencia: Racismo
+  descricao: Caso de racismo
+  nome_vitima: Bixelengo
+  logradouro: Rua A
+  bairro: Good Trip
+  cidade: Raincife
+  estado: Pernambuco
+  nome_contato: Fulaninha
+  telefone_contato: 8188889999
 
 two:
-  tipo_ocorrencia: MyString
-  descricao: MyText
-  nome_vitima: MyString
-  logradouro: MyString
-  bairro: MyString
-  cidade: MyString
-  estado: MyString
-  nome_contato: MyString
-  telefone_contato: MyString
+  tipo_ocorrencia: Homofobia
+  descricao: Caso de homofobia
+  nome_vitima: Jurubeba
+  logradouro: Rua B
+  bairro: Cajazeiras
+  cidade: Salvador
+  estado: Bahia
+  nome_contato: Bixelengo
+  telefone_contato: 7188889999

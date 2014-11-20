@@ -1,4 +1,6 @@
 require 'test_helper'
+require 'pry'
+
 
 class OcorrenciasControllerTest < ActionController::TestCase
   setup do
@@ -36,6 +38,8 @@ class OcorrenciasControllerTest < ActionController::TestCase
 
   test "should update ocorrencia" do
     patch :update, id: @ocorrencia, ocorrencia: { bairro: @ocorrencia.bairro, cidade: @ocorrencia.cidade, descricao: @ocorrencia.descricao, estado: @ocorrencia.estado, logradouro: @ocorrencia.logradouro, nome_contato: @ocorrencia.nome_contato, nome_vitima: @ocorrencia.nome_vitima, telefone_contato: @ocorrencia.telefone_contato, tipo_ocorrencia: @ocorrencia.tipo_ocorrencia }
+    #assert_response :success
+
     assert_redirected_to ocorrencia_path(assigns(:ocorrencia))
   end
 
