@@ -4,12 +4,12 @@ gem 'pry'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 
-group :test do
-  gem 'sqlite3'
+group :production do
+  gem "pg"
 end
 
-group :development, :production do
-  gem 'mysql2'
+group :development, :test do
+  gem "sqlite3"
 end
 
 # Use SCSS for stylesheets
